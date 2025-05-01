@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Selection</title>
+    <style>
+        body {
+            background-color: #F8F4E1;
+            color: #543310;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 120px;
+            border: 2px solid #543310;
+            border-radius: 10px;
+            background-color: #F8F4E1;
+            box-shadow: O.5px;
+            font-size: 30px;
+        }
+
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 25px;
+        }
+
+        select {
+            margin-bottom: 20px;
+            font-size: large;
+        }
+        button{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Quiz Options</h1>
+        <form id="quiz-form">
+            <label for="subject">Choose a Subject:</label>
+            <select id="subject" name="subject">
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+            </select>
+
+            <label for="difficulty">Choose Difficulty Level:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button type="button" onclick="startQuiz()" action="quiz.html">Start Quiz</button>
+        </form>
+    </div>
+    <script>
+        function startQuiz() {
+            const subject = document.getElementById('subject').value;
+            const difficulty = document.getElementById('difficulty').value;
+            window.location.href = `quiz.html?subject=${subject}&difficulty=${difficulty}`;
+        }
+    </script>
+</body>
+</html>
