@@ -1,7 +1,9 @@
 # ❓ Quizora
 
-**Live Site**: [quizoraproj.netlify.app](https://quizoraproj.netlify.app/)  
+**Live Site**: [quizoraproj.netlify.app](https://quizoraproj.netlify.app/) 
+
 **GitHub Deployment**:[github.io](https://sriyamahapatra.github.io/Quizora/)
+
 **GitHub Repository**: [github.com/sriyamahapatra/Quizora](https://github.com/sriyamahapatra/Quizora/)
 
 **Quizora** is a dynamic, API-integrated quiz web application built using **HTML**, **CSS**, and **JavaScript**.  
